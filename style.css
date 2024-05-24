@@ -24,7 +24,9 @@
 .nav-link:hover{
     text-decoration: none;
 }
-
+.glightbox{
+  text-decoration: none;
+}
 
 body{
     font-family: var(--font-default);
@@ -780,7 +782,7 @@ section{
     color: #ce1212;
 }
 .image{
-    background-image: url(events-3.jpg);
+    background-image: url(images/events-3.jpg);
     background-size: cover;
     object-fit: cover;
     height: 400px;
@@ -788,7 +790,7 @@ section{
     opacity: 1;
 }
 .image2{
-    background-image: url(events-1.jpg);
+    background-image: url(images/events-1.jpg);
     background-size: cover;
     object-fit: cover;
     height: 400px;
@@ -796,7 +798,7 @@ section{
     opacity: 1;
 }
 .image3{
-    background-image: url(events-2.jpg);
+    background-image: url(images/events-2.jpg);
     background-size: cover;
     object-fit: cover;
     height: 400px;
