@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,14 +17,17 @@
   <!-- parti hamydou -->
 <!-- navbar  -->
   <nav class="navbar navbar-expand-lg  " id="navbar">
+
     <div class="container ">
         <a class="navbar-brand fonteeee" href="#">Yummy <span class="text-danger fw-bold fs-3">.</span></a>
         <a href="#" class="btn btn-danger rounded-pill order-lg-2 ml-5" role="button" data-bs-toggle="button">Book a Table</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-       
-        <div class="collapse navbar-collapse order-lg-1 d-flex justify-content-center " id="#navbarSupportedContent">
+        </button> -->
+        <div class="collapse navbar-collapse order-lg-1 d-flex justify-content-center " id="navbarResponsive">
         <ul class="navbar-nav ">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -43,9 +47,6 @@
             <li class="nav-item">
                 <a class="nav-link " href="#gallery">Gallery</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link " href="">Drop Down</a>
-            </li> -->
             
             <li class="nav-item dropdown">
               <a class="nav-link  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,6 +84,9 @@
 </nav>
 
 <section id="hero" class="d-flex justify-content-center  section-bg">
+  <div data-aos="fade-up"
+  data-aos-duration="3000">
+
     <div class="container pt-5">
         <div class="row justify-content-betwen">
             <div class="col-lg-6  order-lg-1">
@@ -98,11 +102,13 @@
             </div>
         </div>
     </div>
+  </div>
 </section>
 
 <main id="main">
-
    <section id="about" class="about">
+    <div data-aos="fade-up"
+  data-aos-duration="3000">
     <div class="container" data-aos="fade-up">
         
         <div class="section-header centrer">
@@ -135,15 +141,18 @@
                                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
                             </p>
                         </div>
-                        <div class="col-12">
-                            <img src="about-2.jpg" class="img-fluid" alt="">
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-                        </div>
+                        <div class="position-relative ">
+                          <img src="about-2.jpg" alt="" class="w-100 h-100">
+                          
+                          <div class="circle pulse green">
+                              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"> <i class="bi bi-play-fill text-white fs-1"></i> </a>
+                          </div>
+                      </div>
                     </div>
                 </div>
         </div>
     </div>
-    
+    </div>
    </section>
    <section id="why-us" class="why-us section-bg">
     <div class="container" data-aos="fade-up">
@@ -219,7 +228,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item text-center w-100 h-100 text-white fw-bold ">
                         <span data-purecounter-star="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                        <h1 class="fon">1 453</h1>
+                        <h1 class="fon">1453</h1>
                         <p>Hous of Support</p>
                     </div>
                 </div>
@@ -255,6 +264,7 @@
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
             <h4>Breakfast</h4>
           </a>
+        </li>
 
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
@@ -291,7 +301,7 @@
                 $5.95
               </p>
             </div>
-
+            
             <div class="col-lg-4 menu-item">
               <a href="menu-item-2.png" class="glightbox"><img src="menu-item-2.png" class="menu-img img-fluid" alt=""></a>
               <h4>Aut Luia</h4>
@@ -316,7 +326,7 @@
             
             <div class="col-lg-4 menu-item">
               <a href="menu-item-4.png" class="glightbox"><img src="menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-              <h4>Eos Luibusdam</h4>
+               <h4>Eos Luibusdam</h4>
               <p class="ingredients">
                 Lorem, deren, trataro, filede, nerada
               </p>
@@ -585,122 +595,182 @@
 
     </div>
   </section>
-  <section id="testimonials" class="testimonials section-bg">
-    <div class="container" data-aos="fade-up">
+  <!-- testimonial  -->
+  <div id="homepage-slider" class="st-slider my-5">
+       <input type="radio" class="cs_anchor radio" name="slider" id="slide1">
+       <input type="radio" class="cs_anchor radio" name="slider" id="slide2">
+       <input type="radio" class="cs_anchor radio" name="slider" id="slide3">
+       <input type="radio" class="cs_anchor radio" name="slider" id="slide4">
+       <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="">
+    <div class="images pb-5">
+       <div class="images-inner">
+          <div class="image-slide h-100 p-5">
+                <p class="text-center">
+                    <span class="text-secondary">Testimonials</span> <br>
 
-      <div class="section-header">
-        <h2 class="family">Testimonials</h2>
-        <p class="family">What Are They <span class="text-danger">Saying About Us</span></p>
+                    <span class="police">
+                        What Are They <span class="text-danger">Saying About Us</span>
+                    </span>
+                </p>
+
+                <div class="">
+                    <div class="container  ps-5 pad  d-flex justify-content-center">
+                        <div class="row  ps-5 pad ">
+                            <div class="col-12 col-lg-6 border-start border-danger border-3 ms-5 ps-3 pad marg">
+                                <p class="text-secondary ">
+                                    <i class="bi bi-quote text-danger"></i>
+
+                                     Export tempor illum tamen malis malis eram quae irure esse labore 
+                                     quem cillum quid cillum eram malis quorum velit fore eram velit sunt 
+                                     aliqua noster fugiat irure amet legam anim culpa.
+                                     <i class="bi bi-quote text-danger"></i>
+                                </p>
+                                <p class="h3">
+                                    Saul Godman
+                                </p>
+                                <span class="size-test text-secondary">Seo &amp; Fonder</span>
+                            </div>
+
+                            <div class="col-12 col-lg-5  p-0  center-test">
+                                <img src="testimonials-1.jpg" alt="" class="rounded-pill  img-test border border-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+          </div>
+
+          <div class="image-slide h-100 p-5">
+
+            <p class="text-center">
+                <span class="text-secondary">Testimonials</span> <br>
+
+                <span class="police">
+                    What Are They <span class="text-danger">Saying About Us</span>
+                </span>
+            </p>
+
+            <div class="">
+                <div class="container  ps-5 pad  d-flex justify-content-center">
+                    <div class="row  ps-5 pad ">
+                        <div class="col-12 col-lg-6 border-start border-danger border-3 ms-5 ps-3 pad marg">
+                            <p class="text-secondary ">
+                                <i class="bi bi-quote text-danger"></i>
+
+                                 Export tempor illum tamen malis malis eram quae irure esse labore 
+                                 quem cillum quid cillum eram malis quorum velit fore eram velit sunt 
+                                 aliqua noster fugiat irure amet legam anim culpa.
+                                 <i class="bi bi-quote text-danger"></i>
+                            </p>
+                            <p class="h3">
+                                Saul Godman
+                            </p>
+                            <span class="size-test text-secondary">Seo &amp; Fonder</span>
+                        </div>
+
+                        <div class="col-12 col-lg-5  p-0  center-test">
+                            <img src="image/testimonials-2.jpg" alt="" class="rounded-pill  img-test border border-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div> 
+            
+          <div class="image-slide h-100 p-5">
+
+            <p class="text-center">
+                <span class="text-secondary">Testimonials</span> <br>
+
+                <span class="police">
+                    What Are They <span class="text-danger">Saying About Us</span>
+                </span>
+            </p>
+
+            <div class="">
+                <div class="container  ps-5 pad  d-flex justify-content-center">
+                    <div class="row  ps-5 pad ">
+                        <div class="col-12 col-lg-6 border-start border-danger border-3 ms-5 ps-3 pad marg">
+                            <p class="text-secondary ">
+                                <i class="bi bi-quote text-danger"></i>
+
+                                 Export tempor illum tamen malis malis eram quae irure esse labore 
+                                 quem cillum quid cillum eram malis quorum velit fore eram velit sunt 
+                                 aliqua noster fugiat irure amet legam anim culpa.
+                                 <i class="bi bi-quote text-danger"></i>
+                            </p>
+                            <p class="h3">
+                                Saul Godman
+                            </p>
+                            <span class="size-test text-secondary">Seo &amp; Fonder</span>
+                        </div>
+
+                        <div class="col-12 col-lg-5  p-0  center-test">
+                            <img src="image/testimonials-3.jpg" alt="" class="rounded-pill  img-test border border-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="image-slide h-100 p-5">
+            <p class="text-center">
+                <span class="text-secondary">Testimonials</span> <br>
+
+                <span class="police">
+                    What Are They <span class="text-danger">Saying About Us</span>
+                </span>
+            </p>
+
+            <div class="">
+                <div class="container  ps-5 pad  d-flex justify-content-center">
+                    <div class="row  ps-5 pad ">
+                        <div class="col-12 col-lg-6 border-start border-danger border-3 ms-5 ps-3 pad marg">
+                            <p class="text-secondary ">
+                                <i class="bi bi-quote text-danger"></i>
+
+                                 Export tempor illum tamen malis malis eram quae irure esse labore 
+                                 quem cillum quid cillum eram malis quorum velit fore eram velit sunt 
+                                 aliqua noster fugiat irure amet legam anim culpa.
+                                 <i class="bi bi-quote text-danger"></i>
+                            </p>
+                            <p class="h3">
+                                Saul Godman
+                            </p>
+                            <span class="size-test text-secondary">Seo &amp; Fonder</span>
+                        </div>
+
+                        <div class="col-12 col-lg-5  p-0  center-test">
+                            <img src="image/testimonials-4.jpg" alt="" class="rounded-pill  img-test border border-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
       </div>
-
-      <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="testimonials-1.jpg" class="img-fluid testimonial-img w-50" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="testimonials-2.jpg" class="img-fluid testimonial-img w-50" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="testimonials-3.jpg" class="img-fluid testimonial-img w-50" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="testimonials-4.jpg" class="img-fluid testimonial-img w-50" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
     </div>
-  </section>
 
+    
+  
+    <div class="labels pb-5">
+        <label for="slide1" class="label"></label>
+        <label for="slide2" class="label"></label>
+        <label for="slide3" class="label"></label>
+        <label for="slide4" class="label"></label>
+      
+        <div class="fake-radio">
+          <label for="slide1" class="radio-btn"></label>
+          <label for="slide2" class="radio-btn"></label>
+          <label for="slide3" class="radio-btn"></label>
+          <label for="slide4" class="radio-btn"></label>
+        </div>
+    </div>
+</div>
+ 
 </main>
   <!-- events  -->
     <section class="event" id="event">
+      <div data-aos="fade-up"
+         data-aos-duration="3000">
         <div class="container-fluid pt-5 pb-5">
             <p class="text-center centrer">EVENTS</p>
             <h3 class="text-center centrer">SHARE <i class="rouge">YOUR MOMENTS </i> IN OUR RESTAURANT</h3>
@@ -741,6 +811,7 @@
                 </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
      <!-- cheff -->
@@ -804,11 +875,13 @@
    
     <!-- table  -->
     <section class="table" id="table">
+      <div data-aos="fade-up"
+        data-aos-duration="3000">
         <div class="container pt-5 pb-5">
             <p class="text-center centrer">BOOK TABLE</p>
             <h3 class="text-center centrer">BOOK <i class="text-danger">YOUR STAY </i> With Us</h3>
 
-            <div class="row">
+            <div class="row bg-light">
                 <div class="col-lg-4">
                     <div class="info-container ">
                       <img src="reservaresto.jpg" alt="" class="w-100"> 
@@ -816,16 +889,16 @@
             
                   </div>
             
-                  <div class="col-lg-8">
+                  <div class="col-lg-8 pt-3">
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                       <div class="row">
-                        <div class="col-md-4 form-group">
+                        <div class="col-md-4 form-group pb-3">
                           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                         </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
+                        <div class="col-md-4 form-group mt-3 mt-md-0 pb-3">
                           <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                         </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
+                        <div class="col-md-4 form-group mt-3 mt-md-0 pb-3">
                           <input type="email" class="form-control"  name="name"  id="number" placeholder="Your Phone" required>
                         </div>
                         <div class="col-md-4 form-group mt-3 mt-md-0">
@@ -849,10 +922,12 @@
             
             </div>
         </div>
+        </div>
     </section>
     <!-- galery -->
     <section id="gallery" class="gallery section-bg">
-  
+      <div data-aos="fade-up"
+      data-aos-duration="3000">
           <div class="section-header">
             <p class="text-center centrer">GALLERY</p>
             <h3 class="text-center centrer">CHECK <i class="rouge">OUR GALLERY </i></h3>
@@ -907,11 +982,13 @@
         </div>
           </div>
          
-
+      </div>
       </section>   
 
     <!-- contact  -->
     <section class="contact" id="contact">
+      <div data-aos="fade-up"
+        data-aos-duration="3000">
         <div class="container pt-5 pb-5">
             <p class="text-center centrer">CONTACT</p>
             <h3 class="text-center centrer">NEED HELP ? <i class="rouge">CONTACT US</i></h3>
@@ -953,7 +1030,7 @@
                 </div>
       
                 <div class="col-md-6 ">
-                  <div class="info-item  d-flex align-items-center bg-light">
+                  <div class="info-item  d-flex align-items-center bg-light p-2">
                     <i class="icon bi bi-share flex-shrink-0"></i>
                     <div>
                       <h4>Opening Hours</h4>
@@ -986,6 +1063,7 @@
                 <div class="text-center pb-5 pt-3 "><button type="submit" class="main-btn">Send Message</button></div>
               </form>
             </div>
+        </div>
         </div>
     </section>
 
@@ -1055,6 +1133,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
