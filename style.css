@@ -1,5 +1,7 @@
 
-
+.navbar-nav{
+  margin-left: 20%;
+}
 .nav-item .nav-link {
     position: relative;
     font-size: 16px;
@@ -24,6 +26,15 @@
 .nav-link:hover{
     text-decoration: none;
 }
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
 .glightbox{
   text-decoration: none;
 }
@@ -32,12 +43,12 @@ body{
     font-family: var(--font-default);
     color: var(--color-default);
 }
-/* #navbar{
+#navbar{
     position: sticky;
     top: 0;
     z-index: 10;
     background-color: #FFF;
-} */
+}
 .fonteeee{
     font-size: 30px;
     font-weight: bold;
@@ -833,7 +844,18 @@ section{
 }
 
 /* about */
-
+.backr{
+  background-image: url(images/about.jpg);
+  position: relative;
+}
+.paragraphe{
+  position: absolute;
+  width: 94%;
+  top: 30rem;
+}
+a{
+  text-decoration: none;
+}
 .ul-check li{
 
   list-style-type: none;
@@ -923,6 +945,30 @@ li::before{
 
 
 /* chefsss */
+
+.chefs .chef-member .social {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+.chefs .chef-member .social i {
+  font-size: 18px;
+}
+
+
+.chefs .chef-member .social a {
+    transition: color 0.3s;
+    color: rgba(55, 55, 63, 0.4);
+    margin: 15px 12px;
+    display: block;
+    line-height: 0;
+    text-align: center;
+}
 .chef{
     background-color: #eeeeee;
 }
